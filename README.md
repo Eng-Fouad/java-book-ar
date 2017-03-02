@@ -1,8 +1,3 @@
----
-direction: rtl
-language: ar
----
-
 # My Awesome Book
 
 ### **ما هي جافا؟**
