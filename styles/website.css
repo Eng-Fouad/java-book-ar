@@ -9,3 +9,8 @@
         right: 300px;
     }
 }*/
+
+.navigation.navigation-next {
+    right: auto;
+    left: 0;
+}
