@@ -2,3 +2,8 @@
     left: auto !impoertant;
     right: 0;
 }
+
+@media (min-width: 600px).book.with-summary .book-body {
+    left: 0px;
+    right: 300px;
+}
