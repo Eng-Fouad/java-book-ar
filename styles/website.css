@@ -1,11 +1,11 @@
 .book.with-summary .book-summary {
-    left: auto !important;
+    left: auto;
     right: 0;
 }
 
 @media (min-width: 600px) {
     .book.with-summary .book-body {
-        left: auto !important;
+        left: 0;
         right: 300px;
     }
 }
