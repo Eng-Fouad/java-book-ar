@@ -16,3 +16,8 @@
     left: 0;
     margin-left: 17px;
 }
+
+.book .book-body .page-wrapper .page-inner {
+    right: auto;
+    left: 0px;
+}
