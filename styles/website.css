@@ -5,7 +5,7 @@
 
 @media (min-width: 600px) {
     .book.with-summary .book-body {
-        left: 0px;
+        left: auto;
         right: 300px;
     }
 }
