@@ -11,6 +11,6 @@
 }*/
 
 .navigation.navigation-next {
-    right: auto;
+    right: auto !important;
     left: 0;
 }
