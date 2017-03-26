@@ -3,9 +3,9 @@
     right: 0;
 }
 
-@media (min-width: 600px) {
+/*@media (min-width: 600px) {
     .book.with-summary .book-body {
         left: 0;
         right: 300px;
     }
-}
+}*/
