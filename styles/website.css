@@ -1,23 +1,117 @@
-.book.with-summary .book-summary {
-    left: 0px;
-    right: 0px;
+@import url(https://static.hsoubcdn.com/assets/fonts/css/NotoArabic.css);
+ 
+body, html {
+    overflow-x: hidden;
+    font-family: "Noto Naskh Arabic", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    direction: rtl;
 }
-
-@media (min-width: 600px) {
+ 
+.book.font-family-0 {
+    font-family: "Noto Naskh Arabic", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+ 
+.book-summary,
+.book-header {
+    font-family: "Noto Kufi Arabic", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+ 
+ 
+/* Content */
+ 
+.markdown-section ol, .markdown-section ul {
+  padding: 0 2em 0 0;
+}
+ 
+code { 
+  direction: ltr;
+}
+ 
+.markdown-section li {
+  line-height: 2em;
+}
+ 
+.markdown-section blockquote {
+  border-left: 0;
+  border-right: 4px solid #e5e5e5;
+}
+ 
+/* Navigation */
+ 
+.navigation.navigation-next {
+    left: 0;
+    right: auto;
+}
+.navigation.navigation-prev {
+    right: 0;
+    left: auto;
+}
+ 
+@media (max-width:1240px) {
+  .navigation {
+    float: right;
+  }
+}
+ 
+/* Sidebar */
+ 
+.book.with-summary .book-summary {
+  left: auto;
+  right: 0;
+  border-right: 0;
+  border-left: 1px solid rgba(0,0,0,.07);
+}
+@media (max-width:600px) {
+  .book.with-summary .book-body {
+    -webkit-transform: translate(calc(60px - 100%),0);
+    -moz-transform: translate(calc(60px - 100%),0);
+    -ms-transform: translate(calc(60px - 100%),0);
+    -o-transform: translate(calc(60px - 100%),0);
+    transform: translate(calc(60px - 100%),0);
+  }
+}
+@media (min-width:600px) {
     .book.with-summary .book-body {
-        left: 0px;
-        right: 300px;
+        right:300px;
+    left: 0;
     }
 }
-
-.navigation.navigation-next {
-    right: auto !important;
-    margin-right: 0px !important;
-    left: 0px;
-    margin-left: 17px;
+ 
+/* Next & Prev */
+ 
+.fa-angle-left:before {
+    content: "\f105";
 }
-
-.book .book-body .page-wrapper .page-inner {
-    right: 0px;
-    left: auto;
+.fa-angle-right:before {
+    content: "\f104";
+}
+ 
+/* Navigation */
+ 
+.pull-right {
+  float: left;
+}
+.pull-left {
+  float: right;
+}
+ 
+/* Dropdowns */
+ 
+.dropdown-menu.dropdown-left {
+  left: 4%;
+  right: auto;
+}
+.dropdown-menu.dropdown-left .dropdown-caret {
+  left: 10px;
+  right: auto;
+}
+.dropdown-menu.dropdown-right {
+  right: 4%;
+  left: auto;
+}
+.dropdown-menu.dropdown-right .dropdown-caret {
+  right: 10px;
+  left: auto;
+}
+.dropdown-menu .dropdown-caret .caret-outer {
+  margin: 0 -1px 0 0;
 }
